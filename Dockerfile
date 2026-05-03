@@ -24,7 +24,6 @@ WORKDIR /app
 COPY --from=builder /app/backend /app/backend
 COPY --from=builder /app/frontend/portal/dist /app/frontend/portal/dist
 COPY --from=builder /app/frontend/landing /app/frontend/landing
-COPY --from=builder /app/uploads /app/uploads
 
 # Ensure the uploads directory exists
 RUN mkdir -p /app/uploads
