@@ -22,6 +22,11 @@ app.use('/uploads', express.static(path.join(__dirname, '../../uploads')));
 // API routes
 app.use('/api', apiRoutes);
 
+// Explicit 404 handler for API routes
+app.all('/api/*', (req, res) => {
+  res.status(404).json({ error: 'API endpoint not found' });
+});
+
 // Serve landing page assets
 app.use('/assets', express.static(path.join(__dirname, '../../frontend/landing/assets')));
 

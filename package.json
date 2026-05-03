@@ -1,0 +1,13 @@
+{
+  "name": "mana-pg-rent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mana PG Rent Management System",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "cd backend && npm start",
+    "build": "cd frontend/portal && npm install && npm run build && cd ../../backend && npm install"
+  }
+}

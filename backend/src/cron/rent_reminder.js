@@ -11,7 +11,7 @@ cron.schedule('0 0 * * *', async () => {
     const currentYear = today.getFullYear();
 
     const { rows: tenants } = await pool.query("SELECT * FROM TENANTS WHERE status = 'active'");
-    
+
     for (const tenant of tenants) {
       const dueDay = parseInt(tenant.rent_due_day, 10);
 
