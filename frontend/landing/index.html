@@ -8,8 +8,8 @@
   <meta name="description"
     content="Mana PG Rent is the smartest way to manage hostel rent payments. Verify UPI transactions, track cash payments, and keep tenants organized — all in one app.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo.png" />
   <style>
     :root {
       --primary: #4F46E5;
@@ -37,7 +37,7 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, sans-serif;
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -69,13 +69,12 @@
     }
 
     .logo {
-      font-size: 1.35rem;
-      font-weight: 800;
-      background: var(--gradient-1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      width: auto;
     }
 
     .nav-links {
@@ -776,7 +775,9 @@
   <!-- Navbar -->
   <nav>
     <div class="nav-inner">
-      <div class="logo">Mana PG Rent</div>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Mana PG Rent" />
+      </div>
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
@@ -1020,7 +1021,10 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-text">© 2026 Mana PG Rent. All rights reserved.</div>
+        <div class="footer-text">
+          <img src="assets/logo.png" alt="Mana PG Rent" style="height: 32px; vertical-align: middle; margin-right: 8px;" />
+          © 2026 Mana PG Rent. All rights reserved.
+        </div>
         <div class="footer-links">
           <a href="#about">About</a>
           <a href="#features">Features</a>

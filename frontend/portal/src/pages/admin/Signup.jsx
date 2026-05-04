@@ -110,8 +110,10 @@ export default function Signup() {
     <div className="login-container">
       <div className="card login-card signup-card page-transition">
         <div style={{textAlign: 'center', marginBottom: '1.75rem'}}>
-          <div style={{width: '64px', height: '64px', borderRadius: '16px', background: 'linear-gradient(135deg, var(--primary), #6366F1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem', fontSize: '1.75rem'}}>🏠</div>
-          <h1 style={{color: 'var(--primary)', margin: 0, fontSize: '1.5rem'}}>Create Your Account</h1>
+          <div style={{marginBottom: '1rem'}}>
+            <img src="/logo.png" alt="Mana PG Rent" style={{height: '64px'}} />
+          </div>
+          <h1 style={{color: 'var(--primary)', margin: 0}}>Create Your Account</h1>
           <p style={{color: 'var(--text-muted)', marginTop: '0.5rem', fontSize: '0.875rem'}}>Register your hostel on Mana PG Rent</p>
         </div>
 

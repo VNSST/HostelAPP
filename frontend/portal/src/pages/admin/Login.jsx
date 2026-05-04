@@ -39,7 +39,9 @@ export default function Login() {
     <div className="login-container">
       <div className="card login-card page-transition">
         <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-          <div style={{width: '64px', height: '64px', borderRadius: '16px', background: 'linear-gradient(135deg, var(--primary), #6366F1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem', fontSize: '1.75rem'}}>🏠</div>
+          <div style={{marginBottom: '1rem'}}>
+            <img src="/logo.png" alt="Mana PG Rent" style={{height: '64px'}} />
+          </div>
           <h1 style={{color: 'var(--primary)', margin: 0}}>Admin Portal</h1>
           <p style={{color: 'var(--text-muted)', marginTop: '0.5rem', fontSize: '0.875rem'}}>Mana PG Rent Verification System</p>
         </div>

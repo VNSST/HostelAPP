@@ -7,7 +7,9 @@ function PortalSelector() {
   return (
     <div className="portal-root">
       <div className="portal-inner page-transition">
-        <div className="portal-logo">🏠</div>
+        <div className="portal-logo" style={{background: 'none', width: 'auto', height: 'auto', margin: '0 auto 1.5rem'}}>
+          <img src="/logo.png" alt="Mana PG Rent" style={{height: '80px'}} />
+        </div>
         <h1 className="portal-title">Mana PG Rent</h1>
         <p className="portal-subtitle">Rent Verification System — Select your portal to continue</p>
 
