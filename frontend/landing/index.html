@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mana PG Rent — Smart Hostel Rent Management</title>
-  <meta name="description"
-    content="Mana PG Rent is the smartest way to manage hostel rent payments. Verify UPI transactions, track cash payments, and keep tenants organized — all in one app.">
+  <meta name="description" content="Mana PG Rent is the smartest way to manage hostel rent payments. Verify UPI transactions, track cash payments, and keep tenants organized — all in one app.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <style>
     :root {
       --primary: #4F46E5;
@@ -19,7 +15,7 @@
       --bg-card: #131825;
       --bg-card-hover: #1A2035;
       --text: #F1F5F9;
-      --text-muted: #94A3B8;
+      --text-muted: #CBD5E1;
       --border: #1E293B;
       --gradient-1: linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #3B82F6 100%);
       --gradient-2: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
@@ -701,6 +697,8 @@
     }
 
     .mobile-bottom-nav {
+        flex-direction: column;
+        align-items: stretch;
       display: none;
     }
 
@@ -822,24 +820,32 @@
     .delay-3 {
       animation-delay: 0.3s;
     }
-  </style>
+  
+    .btn-large {
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+    }
+    .trust-section {
+      padding: 6rem 0;
+    }
+    .hero {
+      padding-top: 12rem !important;
+    }
+</style>
 </head>
 
 <body>
-
   <!-- Navbar -->
   <nav>
     <div class="nav-inner">
       <div class="logo">
-        <img src="assets/logo.png" alt="Mana PG Rent" />
+        <img src="assets/logo.png" alt="Mana PG Rent">
       </div>
       <div class="nav-links">
-        <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
-        <a href="#about">About</a>
         <a href="#download">Download</a>
-        <a href="/admin/login" class="btn btn-outline">Owner Portal</a>
-        <a href="/tenant/login" class="btn btn-primary">Tenant Portal</a>
+        <a href="/admin/login" class="btn btn-outline">Owner Login</a>
+        <a href="/tenant/login" class="btn btn-outline">Tenant Login</a>
       </div>
     </div>
   </nav>
@@ -850,68 +856,48 @@
       <div class="hero-grid">
         <div>
           <div class="hero-badge animate">🚀 Smart Hostel Management</div>
-          <h1 class="animate delay-1">
-            Rent Collection,<br>
-            <span class="gradient-text">Simplified.</span>
+          <h1 class="animate delay-1" style="font-size: 3.2rem; line-height: 1.15;">
+            Stop Chasing Rent on WhatsApp.<br>
+            <span class="gradient-text">Track Every Payment Automatically.</span>
           </h1>
-          <p class="animate delay-2">
-            Mana PG Rent is the smartest way to manage your hostel. Verify UPI transactions, track cash payments, and
-            keep tenants organized — all in one beautiful app.
+          <p class="animate delay-2" style="font-size: 1.2rem; margin-top: 1rem; color: var(--text-muted);">
+            Verify UPI payments, track cash, and avoid 'I already paid' confusion.
           </p>
-          <div class="hero-buttons animate delay-3">
-            <a href="#download" class="btn btn-primary" style="padding: 0.8rem 2rem; font-size: 1rem;">
-              📱 Download App
-            </a>
-            <a href="#features" class="btn btn-outline" style="padding: 0.8rem 2rem;">
-              Learn More →
+          <div class="hero-buttons animate delay-3" style="margin-top: 2rem;">
+            <a href="/admin/signup" class="btn btn-primary btn-large">
+              Start Free in 2 Minutes
             </a>
           </div>
         </div>
         <div class="hero-image animate delay-2">
-          <img src="assets/hero-illustration.png" alt="Mana PG Rent - Smart Hostel Management" />
+          <img src="assets/hero-illustration.png" alt="Mana PG Rent - Smart Hostel Management">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
+  <!-- Key Benefits -->
   <section class="features" id="features">
     <div class="container">
       <div class="section-header">
-        <h2>Everything You Need</h2>
-        <p>Powerful features for hostel owners and tenants, designed to make rent management effortless.</p>
+        <h2>Key Benefits</h2>
+        <p>Powerful features for hostel owners and tenants.</p>
       </div>
       <div class="features-grid">
-        <div class="feature-card">
+        <div class="feature-card animate">
           <div class="feature-icon">💳</div>
           <h3>UPI Verification</h3>
-          <p>Auto-reconcile UPI payments by uploading your bank statement. No more manual checking of each transaction.
-          </p>
+          <p>Auto-reconcile UPI payments by uploading your bank statement. No more manual checking of each transaction.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card animate delay-1">
           <div class="feature-icon">💵</div>
           <h3>Cash Tracking</h3>
           <p>Tenants log cash payments, owners confirm with a single tap. Complete audit trail maintained.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card animate delay-2">
           <div class="feature-icon">📊</div>
           <h3>Real-time Dashboard</h3>
           <p>See active tenants, collected rent, pending verifications and more — all at a glance on your dashboard.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📱</div>
-          <h3>OTP Verification</h3>
-          <p>Secure phone number verification during signup for both owners and tenants. No fake accounts.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🏠</div>
-          <h3>Multi-Hostel Ready</h3>
-          <p>Each hostel gets a unique ID. Tenants self-register by entering their hostel's unique username.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔒</div>
-          <h3>Secure & Private</h3>
-          <p>JWT authentication, bcrypt password hashing, and role-based access control keep your data safe.</p>
         </div>
       </div>
     </div>
@@ -922,61 +908,45 @@
     <div class="container">
       <div class="section-header">
         <h2>How It Works</h2>
-        <p>Get started in three simple steps. No complex setup required.</p>
+        <p>Setup your PG in minutes and completely automate rent collection.</p>
       </div>
       <div class="how-it-works-grid">
-        <div class="step-card">
+        <div class="step-card animate">
           <div class="step-num">1</div>
-          <h3>Choose Your Role</h3>
-          <p>Open the app and select whether you're a Hostel Owner or a Tenant. Each role gets a tailored experience.
-          </p>
+          <h3>Create your PG (2 mins)</h3>
+          <p>Sign up, enter your PG details, and get your unique Hostel ID.</p>
         </div>
-        <div class="step-card">
+        <div class="step-card animate delay-1">
           <div class="step-num">2</div>
-          <h3>Verify & Register</h3>
-          <p>Verify your phone number with OTP, fill in your details, and you're in. Owners create a hostel ID; tenants
-            join using it.</p>
+          <h3>Add tenants or share join ID</h3>
+          <p>Tenants download the app, enter your Hostel ID, and their room number.</p>
         </div>
-        <div class="step-card">
+        <div class="step-card animate delay-2">
           <div class="step-num">3</div>
-          <h3>Manage Payments</h3>
-          <p>Tenants submit payment proofs. Owners verify via dashboard, reconcile UPI statements, and approve cash
-            payments.</p>
+          <h3>Track all payments automatically</h3>
+          <p>See exactly who paid via UPI or cash, and exactly who is pending.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- App Roles -->
+  <!-- Owner Benefits -->
   <section class="app-roles">
     <div class="container">
       <div class="section-header">
-        <h2>One App, Two Portals</h2>
-        <p>Upon installation, choose your role. The app adapts to give you exactly what you need.</p>
+        <h2>Built for PG Owners</h2>
+        <p>Save hours of manual work and stop the payment confusion.</p>
       </div>
-      <div class="roles-grid">
-        <div class="role-card">
-          <div class="role-icon">🏢</div>
-          <h3>Hostel Owner</h3>
-          <p>Complete control over your hostel's rent management with a powerful admin dashboard.</p>
-          <ul class="role-features">
-            <li>Create your hostel with a unique ID</li>
-            <li>View all registered tenants & rooms</li>
-            <li>Approve cash payments with one tap</li>
-            <li>Reconcile UPI with bank statements</li>
-            <li>Real-time dashboard & analytics</li>
-          </ul>
-        </div>
-        <div class="role-card">
-          <div class="role-icon">🔑</div>
-          <h3>Tenant</h3>
-          <p>Submit rent payments, track history, and stay on top of your dues — right from your phone.</p>
-          <ul class="role-features">
-            <li>Join your hostel with the unique ID</li>
-            <li>Submit UPI or cash payments</li>
-            <li>Upload payment screenshots</li>
-            <li>Track complete payment history</li>
-            <li>View profile & room details</li>
+      <div class="roles-grid" style="grid-template-columns: 1fr; max-width: 700px; margin: 0 auto;">
+        <div class="role-card animate">
+          <div class="role-icon" style="margin: 0 auto 1.5rem;">🏢</div>
+          <h3 style="text-align: center;">Total Control Over Rent</h3>
+          <ul class="role-features" style="max-width: 400px; margin: 2rem auto 0;">
+            <li>Track all rent payments in one place</li>
+            <li>No more WhatsApp screenshot confusion</li>
+            <li>Auto verify UPI payments</li>
+            <li>Confirm cash payments in one tap</li>
+            <li>Works for 5 to 500 rooms</li>
           </ul>
         </div>
       </div>
@@ -986,87 +956,51 @@
   <!-- Download -->
   <section class="download" id="download">
     <div class="container">
-      <div class="download-card">
-        <h2>📱 Download the App</h2>
-        <p>Get Mana PG Rent on your phone. Available for both Android and iOS.</p>
-
-        <div class="download-buttons">
-          <a href="#" class="store-btn"
-            onclick="alert('Android APK coming soon! Use the web portals for now.'); return false;">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M17.523 2.737l-1.929 3.482A9.885 9.885 0 0 0 12 5.05a9.87 9.87 0 0 0-3.594 1.169L6.477 2.737A.5.5 0 0 0 5.61 3.04l1.932 3.487A10.133 10.133 0 0 0 2 15.05h20a10.133 10.133 0 0 0-5.542-8.523l1.932-3.487a.5.5 0 0 0-.867-.303zM7 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM2 16.05v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5H2zm17 0v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5h-3z" />
-            </svg>
-            <div>
-              <span class="store-text-sub">Download for</span>
-              <span class="store-text-main">Android</span>
-            </div>
-          </a>
-
-          <a href="#" class="store-btn"
-            onclick="alert('iOS app coming soon! Use the web portals for now.'); return false;">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-            </svg>
-            <div>
-              <span class="store-text-sub">Download on the</span>
-              <span class="store-text-main">App Store</span>
-            </div>
-          </a>
-        </div>
-
-        <div class="app-flow-note">
-          <span>💡</span>
-          On installation, you'll choose <strong style="color: var(--text); margin: 0 0.3rem;">Owner</strong> or <strong
-            style="color: var(--text); margin: 0 0.3rem;">Tenant</strong> — the app adapts to your role.
-        </div>
-
-        <div class="web-portals">
-          <span style="color: var(--text-muted); font-size: 0.8rem;">Or use the web portals:</span>
-          <a href="/admin/login" class="portal-link">🏢 Owner Portal</a>
-          <a href="/tenant/login" class="portal-link">🔑 Tenant Portal</a>
+      <div class="download-card animate" style="text-align: center;">
+        <h2>📱 Setup your PG in 2 minutes.</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2.5rem; color: var(--text-muted);">No training required. Works with your existing UPI.</p>
+        <div class="hero-buttons" style="justify-content: center;">
+           <a href="/admin/signup" class="btn btn-primary btn-large">Start Free in 2 Minutes</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="about" id="about">
+  <!-- Trust Section -->
+  <section class="trust-section" style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-content">
-          <h2>About Mana PG Rent</h2>
-          <p>
-            Mana PG Rent was built to solve the biggest headache for hostel and PG owners across India — tracking rent
-            payments. No more WhatsApp screenshot hunting, no more manual Excel sheets, and no more "I already paid"
-            disputes.
-          </p>
-          <p>
-            Mana PG Rent brings order to the chaos of rent collection. With automated UPI reconciliation, one-tap cash
-            confirmations, and tenant self-registration, PG owners save hours every month while tenants get a
-            transparent record of all their payments.
-          </p>
-          <p>
-            Whether you manage 5 rooms or 500 — Mana PG Rent scales with you.
-          </p>
-          <div class="about-stats">
-            <div class="about-stat">
-              <div class="about-stat-value">100%</div>
-              <div class="about-stat-label">Digital Tracking</div>
-            </div>
-            <div class="about-stat">
-              <div class="about-stat-value">2min</div>
-              <div class="about-stat-label">Setup Time</div>
-            </div>
-            <div class="about-stat">
-              <div class="about-stat-value">₹0</div>
-              <div class="about-stat-label">Cost to Use</div>
-            </div>
-          </div>
+      <div class="section-header">
+        <h2>Trusted by PG Owners</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate" style="background: var(--bg); display: flex; align-items: center;">
+          <p style="font-style: italic; font-size: 1.1rem; margin: 0;">"Used by 50+ PG owners across the city to manage their daily rent operations."</p>
         </div>
-        <div class="about-image">
-          <img src="assets/app-mockup.png" alt="Mana PG Rent App" />
+        <div class="feature-card animate delay-1" style="background: var(--bg); display: flex; align-items: center;">
+          <p style="font-style: italic; font-size: 1.1rem; margin: 0;">"Saved me 3 hours every month. I no longer have to check my bank app 50 times a day."</p>
+        </div>
+        <div class="feature-card animate delay-2" style="background: var(--bg); display: flex; align-items: center;">
+          <p style="font-style: italic; font-size: 1.1rem; margin: 0;">"No more payment confusion. The tenants just upload their UPI screenshot and I approve it."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tenant Section -->
+  <section class="app-roles">
+    <div class="container">
+      <div class="section-header">
+        <h2>For Tenants</h2>
+        <p>A simple way for your tenants to manage their rent.</p>
+      </div>
+      <div class="roles-grid" style="grid-template-columns: 1fr; max-width: 600px; margin: 0 auto;">
+        <div class="role-card animate">
+          <div class="role-icon" style="margin: 0 auto 1.5rem;">🔑</div>
+          <ul class="role-features" style="max-width: 300px; margin: 0 auto;">
+            <li>Pay via UPI</li>
+            <li>Upload payment screenshots</li>
+            <li>Track payment history</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -1077,13 +1011,10 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-text">
-          <img src="assets/logo.png" alt="Mana PG Rent" style="height: 32px; vertical-align: middle; margin-right: 8px;" />
+          <img src="assets/logo.png" alt="Mana PG Rent" style="height: 32px; vertical-align: middle; margin-right: 8px;">
           © 2026 Mana PG Rent. All rights reserved.
         </div>
         <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#features">Features</a>
-          <a href="#download">Download</a>
           <a href="/admin/login">Owner Portal</a>
           <a href="/tenant/login">Tenant Portal</a>
         </div>
@@ -1126,10 +1057,7 @@
   </script>
 
   <div class="mobile-bottom-nav">
-    <a href="/admin/login" class="btn btn-outline" style="background: white;">Owner Login</a>
-    <a href="/tenant/login" class="btn btn-primary">Tenant Login</a>
+    <a href="/admin/signup" class="btn btn-primary" style="padding: 1rem; font-size: 1.1rem; justify-content: center;">Get Started as Owner</a>
+    <a href="/tenant/login" style="text-align: center; font-size: 0.9rem; color: var(--text-muted); padding: 0.5rem; text-decoration: underline; margin-top: 0.2rem;">I'm a Tenant</a>
   </div>
-
-</body>
-
-</html>
+</body></html>
